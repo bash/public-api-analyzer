@@ -1,0 +1,6 @@
+<RuleSet Name="Foo" ToolsVersion="10.0">
+    <Rules AnalyzerId="Bash.PublicApiAnalyzer" RuleNamespace="Bash.PublicApiAnalyzer">
+        <Rule Id="CLASS0001" Action="Error" />
+    </Rules>
+</RuleSet>
+
