@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install .NET Core
+      run: ./.github/scripts/install-dotnet-core.sh
+    - name: Build
+      run: dotnet build
+    - name: Test
+      run: dotnet test
